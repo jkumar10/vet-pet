@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="../js/div-radio.js"></script>
+
+  <!--google icon font --><link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="../style/reset.css">
+  <link rel="stylesheet" type="text/css" href="../style/main.css">
+  <link rel="stylesheet" type="text/css" href="../style/account-selector.css">
+  <link rel="stylesheet" type="text/css" href="../style/div-radio.css">
+  <link rel="stylesheet" type="text/css" href="../style/clear-fix.css">
+</head>
+<body>
+
+  <form class="center-block-element account-form" action="loginUpdate.jsp" method="post">
+    <h1 class="login-title">Please login to enter</h1>
+    <div class="account-selector radio-group">
+        <div class="radio icon" data-radio_value="Patient">
+            <i class="account-type material-icons md-dark md-inactive">face</i>
+            <p>Patient</p>
+        </div>
+        <div class="radio icon" data-radio_value="Doctor">
+            <i class="account-type material-icons md-dark md-inactive">work</i>
+            <p>Doctor</p>
+        </div>
+        <div class="radio icon" data-radio_value="Insurance Provider">
+            <i class="account-type material-icons md-dark md-inactive">business</i>
+            <p>Insurance Provider</p>
+        </div>
+        <input id="accountTypeInput" type="text" class="radio-input" name="accountTypeInput" />
+    </div>
+    <input type="text" class="login-input" placeholder="Email Address" name="emailInput" autofocus>
+    <input type="password" class="login-input" name="passwordInput" placeholder="Password">
+    <input type="submit" value="Login" class="login-button">
+    <p class="lost-login"><a href="lostLogin.html">Forgot Password</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="registrationForm.html">New User</a></p>
+  </form>
+  
+</body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+<link rel="stylesheet" type="text/css" href="../style/home.css">
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="viewProfile.jsp">My Profile</a>
+  <a href="searchDoctors.html">Search Doctors</a>
+  <a href="appointment.html">Schedule appointment</a>
+  <a href="#">Search Provider</a>
+  <a href="#">Emergency</a>
+  <a href="#">Hospital Locator</a>
+  <a href="#">Contact Us</a>
+  <a href="#">Log Out</a>
+</div>
+
+<h2><center>Welcome to Vet Pet</center></h2>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<div class=middle>
+<h3>Hospital Locator</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d12372.809961871097!2d-86.51119166810145!3d39.17011717086297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e3!4m5!1s0x886c66c6e3fb15f3%3A0x5ff3f26dda5a28a!2sLuddy+Hall-School+of+Informatics%2C+Computing%2C+and+Engineering%2C+North+Woodlawn+Avenue%2C+Bloomington%2C+IN!3m2!1d39.172971!2d-86.52297399999999!4m5!1s0x886c64151d51ae73%3A0x32852faf8b27208e!2sBloomington+Veterinary+Hospital%2C+115+N+Smith+Rd%2C+Bloomington%2C+IN+47408!3m2!1d39.167263999999996!2d-86.48184599999999!5e0!3m2!1sen!2sus!4v1538967605532" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+</body>
+</html> 
